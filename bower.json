@@ -1,0 +1,40 @@
+{
+  "name": "get-calendar-dates",
+  "description": "Get all ISO calendar dates in a string",
+  "keywords": [
+    "match",
+    "string",
+    "search",
+    "date",
+    "year",
+    "month",
+    "day",
+    "calendar",
+    "iso",
+    "iso8601"
+  ],
+  "main": "browser.js",
+  "homepage": "https://github.com/shinnn/get-calendar-dates",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/get-calendar-dates.git"
+  },
+  "authors": [
+    {
+      "name": "Shinnosuke Watanabe",
+      "url": "https://github.com/shinnn"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "calendar-date-regex": "~1.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "coverage",
+    "node_modules"
+  ]
+}
