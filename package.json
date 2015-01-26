@@ -1,6 +1,6 @@
 {
   "name": "get-calendar-dates",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get all ISO calendar dates in a string",
   "repository": "shinnn/get-calendar-dates",
   "scripts": {
