@@ -34,7 +34,7 @@ bower install get-calendar-dates
 #### [Duo](http://duojs.org/)
 
 ```javascript
-var getCalendarDates = require('shinnn/get-calendar-dates');
+const getCalendarDates = require('shinnn/get-calendar-dates');
 ```
 
 ### Standalone

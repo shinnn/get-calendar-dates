@@ -1,10 +1,10 @@
 'use strict';
 
-var requireBowerFiles = require('require-bower-files');
-var test = require('tape');
+const requireBowerFiles = require('require-bower-files');
+const test = require('tape');
 
 function runTest(description, main) {
-  test(description, function(t) {
+  test(description, t => {
     t.plan(6);
 
     t.equal(main.name, 'getCalendarDates', 'should have a function name.');
@@ -34,13 +34,13 @@ function runTest(description, main) {
     );
 
     t.throws(
-      main.bind(null, 123),
+      () => main(123),
       /TypeError.* is not a string.*The first argument to getCalendarDates must be a string\./,
       'should throw a type error when the first argument is not a string.'
     );
   });
 
-  test(description + '.noDay', function(t) {
+  test(description + '.noDay', t => {
     t.plan(4);
 
     t.equal(main.noDay.name, 'getCalendarDatesWithoutDays', 'should have a function name.');
@@ -58,14 +58,14 @@ function runTest(description, main) {
     );
 
     t.throws(
-      main.bind(null, 123),
+      () => main(123),
       /TypeError.* is not a string.*The first argument to getCalendarDates must be a string\./,
       'should throw a type error when the first argument is not a string.'
     );
   });
 }
 
-runTest('require(\'get-calendar-dates\')', require('./'));
+runTest('require(\'get-calendar-dates\')', require('.'));
 
 global.window = {};
 requireBowerFiles({self: true});
