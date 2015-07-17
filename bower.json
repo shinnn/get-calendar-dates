@@ -14,16 +14,14 @@
     "iso8601"
   ],
   "main": "browser.js",
+  "moduleType": "globals",
   "homepage": "https://github.com/shinnn/get-calendar-dates",
   "repository": {
     "type": "git",
     "url": "git://github.com/shinnn/get-calendar-dates.git"
   },
   "authors": [
-    {
-      "name": "Shinnosuke Watanabe",
-      "url": "https://github.com/shinnn"
-    }
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
   ],
   "license": "MIT",
   "dependencies": {
