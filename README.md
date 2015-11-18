@@ -3,8 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/get-calendar-dates.svg)](https://www.npmjs.com/package/get-calendar-dates)
 [![Bower version](https://img.shields.io/bower/v/get-calendar-dates.svg)](https://github.com/shinnn/get-calendar-dates/releases)
 [![Build Status](https://travis-ci.org/shinnn/get-calendar-dates.svg?branch=master)](https://travis-ci.org/shinnn/get-calendar-dates)
-[![Build status](https://ci.appveyor.com/api/projects/status/3vi5lrvvj8mjg3rt?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/get-calendar-dates)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/get-calendar-dates.svg?label=cov)](https://coveralls.io/r/shinnn/get-calendar-dates)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/get-calendar-dates.svg)](https://coveralls.io/github/shinnn/get-calendar-dates)
 [![Dependency Status](https://img.shields.io/david/shinnn/get-calendar-dates.svg?label=deps)](https://david-dm.org/shinnn/get-calendar-dates)
 [![devDependency Status](https://img.shields.io/david/dev/shinnn/get-calendar-dates.svg?label=devDeps)](https://david-dm.org/shinnn/get-calendar-dates#info=devDependencies)
 
