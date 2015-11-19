@@ -9,7 +9,7 @@ var calendarDateRegex = require('calendar-date-regex');
 function assertString(str, fnName) {
   if (typeof str !== 'string') {
     throw new TypeError(
-      str +
+      String(str) +
       ' is not a string. The first argument to ' + fnName + ' must be a string.'
     );
   }

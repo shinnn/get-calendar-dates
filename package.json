@@ -6,10 +6,9 @@
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
     "bower": "bower install --production",
-    "pretest": "eslint --config node_modules/@shinnn/eslintrc/rc.json browser.js index.js test.js && ${npm_package_scripts_bower}",
-    "test": "node --harmony_arrow_functions test.js | tap-spec",
-    "coverage": "node --harmony_arrow_functions node_modules/.bin/istanbul cover -x=bower_components/*/*.js test.js",
-    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
+    "pretest": "eslint --fix --config @shinnn browser.js index.js test.js && ${npm_package_scripts_bower}",
+    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js | tap-spec",
+    "coverage": "node --strong_mode --throw-deprecation --track-heap-objects node_modules/.bin/istanbul cover -x=bower_components/*/*.js test.js"
   },
   "license": "MIT",
   "files": [
@@ -33,13 +32,12 @@
     "calendar-date-regex": "^1.0.1"
   },
   "devDependencies": {
-    "@shinnn/eslintrc": "^1.0.0",
-    "bower": "^1.4.1",
-    "eslint": "^0.24.0",
-    "istanbul": "^0.3.17",
-    "istanbul-coveralls": "^1.0.3",
-    "require-bower-files": "^2.0.0",
-    "tap-spec": "^4.0.2",
-    "tape": "^4.0.0"
+    "@shinnn/eslint-config": "^1.4.0",
+    "bower": "^1.6.8",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
+    "require-bower-files": "^3.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.2.2"
   }
 }

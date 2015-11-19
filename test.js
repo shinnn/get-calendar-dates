@@ -1,4 +1,4 @@
-'use strict';
+'use strong';
 
 const requireBowerFiles = require('require-bower-files');
 const test = require('tape');
@@ -70,4 +70,4 @@ runTest('require(\'get-calendar-dates\')', require('.'));
 global.window = {};
 requireBowerFiles({self: true});
 
-runTest('window.getCalendarDates', window.getCalendarDates);
+runTest('window.getCalendarDates', global.window.getCalendarDates);

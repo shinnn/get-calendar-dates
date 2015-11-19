@@ -8,7 +8,7 @@
   function assertString(str, fnName) {
     if (typeof str !== 'string') {
       throw new TypeError(
-        str +
+        String(str) +
         ' is not a string. The first argument to ' + fnName + ' must be a string.'
       );
     }
@@ -23,4 +23,4 @@
     assertString(str, 'getCalendarDates.noDay');
     return str.match(window.calendarDateRegex.noDay()) || [];
   };
-}());
+})();
