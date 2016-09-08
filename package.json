@@ -7,8 +7,8 @@
   "scripts": {
     "bower": "bower install --production",
     "pretest": "eslint --fix --config @shinnn browser.js index.js test.js && ${npm_package_scripts_bower}",
-    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js | tap-spec",
-    "coverage": "node --strong_mode --throw-deprecation --track-heap-objects node_modules/.bin/istanbul cover -x=bower_components/*/*.js test.js"
+    "test": "node --throw-deprecation --track-heap-objects test.js | tap-spec",
+    "coverage": "istanbul cover -x=bower_components/*/*.js test.js"
   },
   "license": "MIT",
   "files": [
